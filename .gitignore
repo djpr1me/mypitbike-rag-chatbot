@@ -1,0 +1,8 @@
+.venv/
+.env/
+vector_store/
+processed_docs/
+__pycache__/
+*.log
+.DS_Store
+docs/
