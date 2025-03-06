@@ -13,15 +13,15 @@ def print_answer(response: dict):
         print(f"- {src}")
     
     # Additional debugging (optional)
-    print("\n🔍 Context snippets:")
-    for i, ctx in enumerate(response['context'][:2], 1):
-        print(f"{i}. {ctx[:200]}...")
+    # print("\n🔍 Context snippets:")
+    # for i, ctx in enumerate(response['context'][:2], 1):
+    #     print(f"{i}. {ctx[:200]}...")
 
 if __name__ == "__main__":
     model_config = {
         "model_name": "deepseek-ai/DeepSeek-R1-Distill-Llama-70B-free",
         "system_message": (
-            """
+            """exit
             Act as bike technical assistant. Answer strictly according to the documentation provided.
             Answer format:
             1. Basic answer

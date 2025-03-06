@@ -14,3 +14,27 @@ MyPitbike RAG Chatbot is a chat application designed to assist users with questi
 
 - **Chat Console**: Interact with the bot through a command-line chat interface.
 - **Ask Questions**: Type your queries into the console and receive answers with links to relevant documentation.
+
+![Illustration](image.png)
+
+## How to Start
+
+To run the MyPitbike RAG Chatbot locally, follow these steps in two separate terminal windows:
+
+1. **Start the Ollama Server:**
+
+   In the first terminal window, execute the command to start the Ollama server. This will make the local embedding service available:
+
+   ```bash
+   ollama serve
+   ```
+
+2. **Run the Console Chat Bot:**
+
+   Open a second terminal window and run the following command to interact with the chat bot:
+
+   ```bash
+   python chat_console.py
+   ```
+
+   Enter questions in the console to receive answers. To exit the chat bot, type `exit` in the question field.
